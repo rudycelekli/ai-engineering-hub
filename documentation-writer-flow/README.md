@@ -16,8 +16,9 @@ We use:
 # Setting up Ollama on linux
 curl -fsSL https://ollama.com/install.sh | sh
 
-# Pull the Deepseek-R1 model
-ollama pull deepseek-r1
+# Pull the Deepseek-R1 model used by utils.py and the embedding model used by crew.py
+ollama pull deepseek-r1:7b
+ollama pull nomic-embed-text
 ```
 
 **Install Dependencies**
