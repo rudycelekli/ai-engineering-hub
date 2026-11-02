@@ -16,15 +16,7 @@ st.subheader("Powered by Browserbase and CrewAI")
 
 # Sidebar for API key input
 with st.sidebar:
-    # Add Browserbase logo and Configuration header in the same line
-    # Browserbase Configuration
-    col1, col2 = st.columns([1, 3])
-    with col1:
-        # Add vertical space to align with header
-        st.write("")
-        st.image("./assets/browser-base.png", width=65)
-    with col2:
-        st.header("Browserbase Configuration")
+    st.header("Browserbase Configuration")
     
     # Add hyperlink to get API key
     st.markdown("[Get your API key](https://browserbase.ai)", unsafe_allow_html=True)
