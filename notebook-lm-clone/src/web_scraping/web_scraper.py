@@ -153,8 +153,11 @@ class WebScraper:
                 chunks.append(chunk)
                 chunk_index += 1
             
-            start = max(start + chunk_size - chunk_overlap, end)
-        
+            if end >= len(content):
+                break
+            # Step back chunk_overlap characters so consecutive chunks share context
+            start = max(end - chunk_overlap, start + 1)
+
         return chunks
     
     def batch_scrape_urls(

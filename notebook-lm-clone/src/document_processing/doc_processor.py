@@ -186,9 +186,10 @@ class DocumentProcessor:
                 chunks.append(chunk)
                 chunk_index += 1
             
-            start = max(start + self.chunk_size - self.chunk_overlap, end)
-            if start >= len(text):
+            if end >= len(text):
                 break
+            # Step back chunk_overlap characters so consecutive chunks share context
+            start = max(end - self.chunk_overlap, start + 1)
         
         return chunks
     
