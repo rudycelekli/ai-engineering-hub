@@ -7,7 +7,7 @@ import tempfile
 import time
 import uuid
 
-from IPython.display import Markdown, display
+from dotenv import load_dotenv
 
 from llama_index.core import Settings
 from llama_index.core import PromptTemplate
@@ -21,6 +21,9 @@ from utils import (
     setup_trustworthiness_handler,
     outputs_with_trustworthiness
 )
+
+# Load CLEANLAB_API_KEY (and the other keys) from the .env file described in the README
+load_dotenv()
 
 if "id" not in st.session_state:
     st.session_state.id = uuid.uuid4()

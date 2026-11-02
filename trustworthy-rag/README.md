@@ -18,7 +18,7 @@ Before you start, grab your API keys for LlamaParse and TLM
 **Install Dependencies**:
    Ensure you have Python 3.11 or later installed.
    ```bash
-   pip install llama-index-llms-cleanlab llama-index llama-index-embeddings-huggingface
+   pip install llama-index-llms-cleanlab llama-index llama-index-embeddings-huggingface llama-parse streamlit python-dotenv
    ```
 **Running the app**:
 ```bash
