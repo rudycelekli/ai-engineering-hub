@@ -17,8 +17,8 @@ This project implements an automated book writing system using AI agents.
 - Store it in the .env file.
 
 ```
-BRIGHDATA_USERNAME="..."
-BRIGHDATA_PASSWORD="..."
+BRIGHT_DATA_USERNAME="..."
+BRIGHT_DATA_PASSWORD="..."
 ```
 
 **Install Dependencies**:
