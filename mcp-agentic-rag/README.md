@@ -24,7 +24,7 @@ BRIGHDATA_PASSWORD="..."
 **Install Dependencies**:
    Ensure you have Python 3.11 or later installed.
    ```bash
-   pip install mcp qdrant-client
+   pip install "mcp>=1.2,<2" qdrant-client llama-index-embeddings-huggingface einops python-dotenv requests
    ```
 
 ---
