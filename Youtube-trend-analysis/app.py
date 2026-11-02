@@ -152,6 +152,8 @@ def start_analysis():
 
             status_container.info("Processing transcripts...")
             st.session_state.all_files = []
+            # The transcripts folder is not tracked in the repo, so create it before writing
+            os.makedirs("transcripts", exist_ok=True)
             # Calculate transcripts
             for i in tqdm(range(len(channel_scrapped_output[0]))):
 
