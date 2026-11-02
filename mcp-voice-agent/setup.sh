@@ -10,7 +10,7 @@ source venv/bin/activate
 # .\venv\Scripts\activate.bat
 
 # 3. Install your packages inside the venv
-pip install livekit-agents livekit-plugins-assemblyai livekit-plugins-openai livekit-plugins-silero python-dotenv "pydantic-ai-slim[openai,mcp]"
+pip install livekit-agents livekit-plugins-assemblyai livekit-plugins-openai livekit-plugins-silero python-dotenv "pydantic-ai-slim[openai,mcp]" "firecrawl-py>=2.0,<3"
 
 # 4. Run your agent
 python agent.py dev

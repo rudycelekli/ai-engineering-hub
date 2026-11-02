@@ -4,3 +4,4 @@ livekit-plugins-openai
 livekit-plugins-silero
 python-dotenv
 pydantic-ai-slim[openai,mcp]
+firecrawl-py>=2.0,<3
