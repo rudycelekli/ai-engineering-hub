@@ -68,7 +68,8 @@ with st.sidebar:
                 with open(file_path, "wb") as f:
                     f.write(uploaded_file.getvalue())
                 
-                file_key = f"{session_id}-{uploaded_file.name}"
+                # The query engine binds the LLM when it is built, so cache one per selected model
+                file_key = f"{session_id}-{uploaded_file.name}-{model_option}"
                 st.write("Indexing your document...")
 
                 if file_key not in st.session_state.get('file_cache', {}):
