@@ -54,7 +54,11 @@ def parse_github_url(url):
     """Parse the GitHub URL to extract owner and repository name."""
     pattern = r"https://github\.com/([^/]+)/([^/]+)"
     match = re.match(pattern, url)
-    return match.groups() if match else (None, None)
+    if not match:
+        return None, None
+    owner, repo = match.groups()
+    # `git clone .../repo.git` creates ./repo, so drop the suffix
+    return owner, repo.removesuffix(".git")
 
 
 def clone_repo(repo_url):
