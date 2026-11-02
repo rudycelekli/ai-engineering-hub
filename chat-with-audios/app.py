@@ -93,7 +93,7 @@ col1, col2 = st.columns([6, 1])
 with col1:
     st.markdown("""
     # RAG over Audio powered by <img src="data:image/png;base64,{}" width="200" style="vertical-align: -15px; padding-right: 10px;">  and <img src="data:image/png;base64,{}" width="200" style="vertical-align: -5px; padding-left: 10px;">
-""".format(base64.b64encode(open("assets/Assemblyai.png", "rb").read()).decode(),
+""".format(base64.b64encode(open("assets/AssemblyAI.png", "rb").read()).decode(),
            base64.b64encode(open("assets/deep-seek.png", "rb").read()).decode()), unsafe_allow_html=True)
 
 with col2:
