@@ -18,7 +18,7 @@ Add these to your .env file, refer ```.env.example```
 **Install Dependencies**:
    Ensure you have Python 3.11 or later installed.
    ```bash
-   pip install opik llama-index llama-index-agent-openai llama-index-llms-openai llama-index-llms-anthropic --upgrade --quiet
+   pip install opik llama-index llama-index-llms-openai llama-index-llms-anthropic llama-index-vector-stores-qdrant llama-index-embeddings-fastembed llama-index-embeddings-huggingface streamlit python-dotenv --upgrade --quiet
    ```
 
 **Running the app**:
