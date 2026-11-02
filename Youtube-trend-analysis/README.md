@@ -16,9 +16,13 @@ This project implements a YouTube Trend Analysis with CrewAI and BrightData.
 
 ```
 BRIGHT_DATA_API_KEY=your_api_key
+OPENAI_API_KEY=your_openai_api_key
 ```
 
-**Setup Ollama**:
+The agents run on OpenAI `gpt-4o` by default (see `load_llm()` in `app.py`), so `OPENAI_API_KEY` is required.
+
+**Setup Ollama (optional, to run locally instead of OpenAI)**:
+   To use a local model, set up Ollama as below and switch `load_llm()` in `app.py` to the commented-out `ollama/llama3.2` LLM.
    ```bash
    # setup ollama on linux 
    curl -fsSL https://ollama.com/install.sh | sh
