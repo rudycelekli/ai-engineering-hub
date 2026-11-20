@@ -94,6 +94,10 @@ with st.sidebar:
 
 # Main area
 if generate_btn:
+    firecrawl_key = firecrawl_key.strip()
+    openrouter_key = openrouter_key.strip()
+    minimax_key = minimax_key.strip()
+    url = url.strip()
     if not all([firecrawl_key, openrouter_key, minimax_key, url]):
         st.error("❌ Please fill in all API keys and provide a URL")
     else:
